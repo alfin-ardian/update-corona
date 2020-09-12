@@ -23,10 +23,13 @@
                     <a class="nav-link" href="<?= base_url(); ?>home">Home <i class="fas fa-home"></i><span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url(); ?>provinsi/">Kasus Provinsi <i class="fas fa-ambulance"></i></i></a>
+                    <a class="nav-link" href="<?= base_url(); ?>provinsi/">Kasus Provinsi <i class="fas fa-journal-whills"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url(); ?>peta">Peta Sebaran <i class="fas fa-chart-line"></i></i></a>
+                    <a class="nav-link" href="<?= base_url(); ?>peta">Peta Sebaran <i class="fas fa-users"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url(); ?>lapor">Lapor Sigap <i class="fas fa-users"></i></a>
                 </li>
 
             </ul>
