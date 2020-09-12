@@ -6,6 +6,7 @@
     </div>
 </div>
 
+
 <script>
     var mymap = L.map('mapid').setView([-2.431917, 119.862500], 5);
 
@@ -18,4 +19,15 @@
         tileSize: 512,
         zoomOffset: -1
     }).addTo(mymap);
+
+    <?php foreach ($nasional['features'] as $nas) {
+    ?>
+        L.marker([<?= $nas['geometry']['y'] ?>, <?= $nas['geometry']['x'] ?>]).addTo(mymap)
+            .bindPopup("<b>Provinsi : <?= $nas['attributes']['Provinsi']; ?></b> <br/>" +
+                "<b>positif : <?= $nas['attributes']['Kasus_Posi']; ?></br>" +
+                "<b>sembuh : <?= $nas['attributes']['Kasus_Semb']; ?></br>" +
+                "<b>meninggal : <?= $nas['attributes']['Kasus_Meni']; ?></br>").openPopup();
+    <?php
+    }
+    ?>
 </script>
